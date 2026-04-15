@@ -9,6 +9,9 @@ public class Cliente {
     private double dinero_gastado;
     private int productos_comprados;
 
+    public Cliente() {
+    }
+
     public Cliente(int id, String nombre, String email, String telefono, int edad, double dinero_gastado, int productos_comprados) {
         this.id = id;
         this.nombre = nombre;
@@ -26,9 +29,6 @@ public class Cliente {
         this.edad = edad;
         this.dinero_gastado = dinero_gastado;
         this.productos_comprados = productos_comprados;
-    }
-
-    public Cliente() {
     }
 
     public int getId() {
@@ -85,18 +85,5 @@ public class Cliente {
 
     public void setProductos_comprados(int productos_comprados) {
         this.productos_comprados = productos_comprados;
-    }
-
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", email='" + email + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", edad=" + edad +
-                ", dinero_gastado=" + dinero_gastado +
-                ", productos_comprados=" + productos_comprados +
-                '}';
     }
 }
